@@ -18,7 +18,6 @@ html {
 }
 body {
     background: #ffffff;
-    /* font-family: 'Cormorant Garamond', serif; */
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 1.6rem;
@@ -255,6 +254,7 @@ main li {
     justify-content: space-between;
 }
 .blog {
+    align-items: flex-end;
     max-width: 740px;
     margin-right: calc(730px - 350px - 350px);
 }
@@ -272,9 +272,12 @@ section + section {
 }
 .related {
     width: calc(730px  + 350px + 60px);
+    justify-content: center;
 }
 .related li{
     background: #fff;
+    margin-left: calc((730px - 350px - 350px) / 2);
+    margin-right: calc((730px - 350px - 350px) / 2);
 }
 .related li:nth-of-type(3) {
     margin-right: 0;
@@ -442,6 +445,9 @@ input:focus, textarea:focus {
     nav {
         height: 100px;
         transition: 0.3s;
+    }
+    .blog li:nth-of-type(3) {
+        max-width: 350px;
     }
 }
 /* w 470 screen ends*/
